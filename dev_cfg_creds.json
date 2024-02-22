@@ -46,7 +46,7 @@
   },
   "providers": [
     {
-      "id": "NLK_DEV_KRATOS_CREDS",
+      "id": "NLK_DEV_KRATOS_TOKEN",
       "title": {
         "ru": "Войти",
         "en": "Sign In"
@@ -55,7 +55,7 @@
         "ru": "Введите логин и пароль Личного кабинета клиента",
         "en": "Enter the login and password of the client's Private office"
       },
-      "default": true,
+      "default": false,
       "registration": true,
       "recoveryLink": "https://account.finam.ru/RestoreAccess"
     },
@@ -69,7 +69,7 @@
         "ru": "Введите логин и пароль Личного кабинета клиента",
         "en": "Enter the login and password of the client's Private office"
       },
-      "default": false,
+      "default": true,
       "registration": true,
       "recoveryLink": "https://account.finam.ru/RestoreAccess"
     },
@@ -159,7 +159,7 @@
     "default": "ru"
   },
   "ottProviders": {
-    "edox": "EDO_DEV_KRATOS_TOKEN",
+    "edox": "EDO_DEV_KRATOS_CREDS",
     "comon": "COMON_DEV_KRATOS_TOKEN"
   },
   "chat": {
