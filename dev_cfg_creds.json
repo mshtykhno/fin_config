@@ -7,7 +7,7 @@
     "edoxAccess": ["https://cbdev.finam.ru"],
     "edoxAccounts": ["https://cbdev.finam.ru"],
     "edoxUserProfile": ["https://cbdev.finam.ru"],
-    "edoxDocuments": ["https://cbdev.finam.ru"],
+    "edoxDocuments": ["https://test-edox-grpc.finam.ru"],
     "edoxProducts": ["https://cbdev.finam.ru"],
     "edoxConfirmation": ["https://cbdev.finam.ru"],
     "edoxIpo": ["https://cbdev.finam.ru"],
