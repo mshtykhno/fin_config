@@ -2,7 +2,7 @@
   "services": {
     "txauth": ["https://cbdev.finam.ru"],
     "txcabinet": ["https://cbdev.finam.ru"],
-    "txbofficer": ["https://cbdev.finam.ru"],
+    "txbofficer": ["100.100.8.143:30903"],
     "edox": ["https://test-edox-grpc.finam.ru"],
     "edoxAccess": ["https://test-edox-grpc.finam.ru"],
     "edoxAccounts": ["https://test-edox-grpc.finam.ru"],
