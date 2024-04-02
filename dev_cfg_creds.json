@@ -2,15 +2,15 @@
   "services": {
     "txauth": ["https://cbdev.finam.ru"],
     "txcabinet": ["https://cbdev.finam.ru"],
-    "txbofficer": ["100.100.8.143:30903"],
-    "edox": ["https://test-edox-grpc.finam.ru"],
-    "edoxAccess": ["https://test-edox-grpc.finam.ru"],
-    "edoxAccounts": ["https://test-edox-grpc.finam.ru"],
+    "txbofficer": ["https://cbdev.finam.ru"],
+    "edox": ["https://cbdev.finam.ru"],
+    "edoxAccess": ["https://cbdev.finam.ru"],
+    "edoxAccounts": ["https://cbdev.finam.ru"],
     "edoxUserProfile": ["https://test-edox-grpc.finam.ru"],
-    "edoxDocuments": ["https://test-edox-grpc.finam.ru"],
-    "edoxProducts": ["https://test-edox-grpc.finam.ru"],
-    "edoxConfirmation": ["https://test-edox-grpc.finam.ru"],
-    "edoxIpo": ["https://test-edox-grpc.finam.ru"],
+    "edoxDocuments": ["https://cbdev.finam.ru"],
+    "edoxProducts": ["https://cbdev.finam.ru"],
+    "edoxConfirmation": ["https://cbdev.finam.ru"],
+    "edoxIpo": ["https://cbdev.finam.ru"],
     "userFlow": ["https://cbdev.finam.ru"],
     "filials": ["https://www.finam.ru/api/filials"],
     "txsaves": ["https://cbdev.finam.ru"],
@@ -28,7 +28,7 @@
     "warhol": "https://cbdev.finam.ru/wstatic/$type/$size/$id$mult.png",
     "ft": "https://ft-stable.finam.dev?configUrl=https://dz5m0hnfc5lit.cloudfront.net/dev/ft_lite-html5&debug=grpc",
     "ftDynamicLink": "https://finamtrade.page.link",
-    "edox": "https://edox-test.finam.ru",
+    "edox": "https://test-lk.finam.ru",
     "ibank": "https://ibank-dit.finambank.ru",
     "open": "https://test-open.finam.ru",
     "comon": "https://www.dev-comon.ru",
@@ -251,5 +251,9 @@
   "bestPrivateInvestor": {
     "dateBegin": 1693993182,
     "dateEnd": 1701957000
+  },
+  "paybackBanner": {
+    "dateBegin": 1711398355,
+    "dateEnd": 1715115540
   }
 }
