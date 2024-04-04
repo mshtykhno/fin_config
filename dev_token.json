@@ -1,4 +1,4 @@
-O{
+{
   "services": {
     "txauth": ["https://cbdev.finam.ru"],
     "txcabinet": ["https://cbdev.finam.ru"],
