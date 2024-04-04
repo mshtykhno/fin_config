@@ -122,11 +122,11 @@
       "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
     },
     {
-      "id": "EDO_DEV_KRATOS_CREDS",
+      "id": "EDO_DEV_CRATOS_CREDS",
       "capitalized_login": false,
       "title": {
-        "ru": "Личный кабинет EDO_DEV_KRATOS_CREDS",
-        "en": "Private office EDO_DEV_KRATOS_CREDS"
+        "ru": "Личный кабинет EDO_DEV_CRATOS_CREDS",
+        "en": "Private office EDO_DEV_CRATOS_CREDS"
       },
       "description": {
         "ru": "Для входа в систему используйте логин и пароль Личного кабинета клиента",
