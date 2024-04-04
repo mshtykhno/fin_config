@@ -1,4 +1,4 @@
-{
+O{
   "services": {
     "txauth": ["https://cbdev.finam.ru"],
     "txcabinet": ["https://cbdev.finam.ru"],
@@ -154,7 +154,7 @@
     "default": "ru"
   },
   "ottProviders": {
-    "edox": "NLK_DEV_KRATOS_TOKEN"
+    "edox": "EDO_DEV_KRATOS_TOKEN"
   },
   "chat": {
     "widgetUrl": "https://txchat-widget-staging.finam.dev",
