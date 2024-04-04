@@ -70,11 +70,11 @@
       "recoveryLink": "https://account.finam.ru/RestoreAccess"
     },
     {
-      "id": "EDO_DEV_KRATOS_CREDS",
+      "id": "EDO_DEV",
       "capitalized_login": false,
       "title": {
-        "ru": "Личный кабинет EDO_DEV_KRATOS_CREDS",
-        "en": "Private office EDO_DEV_KRATOS_CREDS"
+        "ru": "Личный кабинет EDO_DEV",
+        "en": "Private office EDO_DEV"
       },
       "description": {
         "ru": "Для входа в систему используйте логин и пароль Личного кабинета клиента",
@@ -154,7 +154,7 @@
     "default": "ru"
   },
   "ottProviders": {
-    "edox": "EDO_DEV"
+    "edox": "EDO_DEV_KRATOS_CREDS"
   },
   "chat": {
     "widgetUrl": "https://txchat-widget-staging.finam.dev",
