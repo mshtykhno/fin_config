@@ -1,38 +1,38 @@
 {
   "services": {
-    "txauth": ["https://cbdev.finam.ru"],
-    "txcabinet": ["https://cbdev.finam.ru"],
-    "txbofficer": ["https://cbdev.finam.ru"],
-    "edox": ["https://cbdev.finam.ru"],
-    "edoxAccess": ["https://cbdev.finam.ru"],
-    "edoxAccounts": ["https://cbdev.finam.ru"],
-    "edoxUserProfile": ["https://cbdev.finam.ru"],
-    "edoxDocuments": ["https://cbdev.finam.ru"],
-    "edoxProducts": ["https://cbdev.finam.ru"],
-    "edoxConfirmation": ["https://cbdev.finam.ru"],
-    "edoxIpo": ["https://cbdev.finam.ru"],
-    "userFlow": ["https://cbdev.finam.ru"],
-    "filials": ["https://www.finam.ru/api/filials"],
-    "txsaves": ["https://cbdev.finam.ru"],
-    "txchat": ["https://cbdev.finam.ru"],
-    "ibank": ["https://dev-mbank.finambank.ru"],
-    "txevents": ["https://cbdev.finam.ru"],
-    "screener": ["https://cbdev.finam.ru/ftrr01-dev"],
-    "comon": ["https://www.dev-comon.ru"],
-    "notifications": ["https://cbdev.finam.ru"]
+    "txauth": ["https://ftru01.finam.ru"],
+    "txcabinet": ["https://uat-lk-api.finam.ru"],
+    "txbofficer": ["https://uat-lk-api.finam.ru"],
+    "edox": ["https://uat-edox-grpc.finam.ru"],
+    "edoxAccess": ["https://uat-edox-grpc.finam.ru"],
+    "edoxAccounts": ["https://uat-edox-grpc.finam.ru"],
+    "edoxUserProfile": ["https://uat-edox-grpc.finam.ru"],
+    "edoxDocuments": ["https://uat-edox-grpc.finam.ru"],
+    "edoxProducts": ["https://uat-edox-grpc.finam.ru"],
+    "edoxConfirmation": ["https://uat-edox-grpc.finam.ru"],
+    "edoxIpo": ["https://uat-edox-grpc.finam.ru"],
+    "userFlow": ["https://ftru01.finam.ru"],
+    "filials": ["https://test.finam.ru/api/filials"],
+    "txsaves": ["https://ftru01.finam.ru"],
+    "txchat": ["https://ftru01.finam.ru"],
+    "ibank": ["https://uat-mbank.finambank.ru"],
+    "txevents": ["https://ftru01.finam.ru"],
+    "screener": ["https://ftru01.finam.ru"],
+    "comon": ["https://www.uat-comon.ru"],
+    "notifications": ["https://ftru01.finam.ru"]
   },
   "resources": {
     "productsMenu": "https://lpb-cdn.finam.ru/global-menu/1.json",
     "servicesMenu": "https://lpb-cdn.finam.ru/global-menu/2.json",
     "security_icon": "https://domestic-cdn.finam.ru/staging/logo/$securityId.png",
-    "warhol": "https://cbdev.finam.ru/wstatic/$type/$size/$id$mult.png",
-    "ft": "https://ft-stable.finam.dev?configUrl=https://dz5m0hnfc5lit.cloudfront.net/dev/ft_lite-html5&debug=grpc",
+    "warhol": "https://warhol.finam.ru/$type/$size/$id$mult.png",
+    "ft": "https://trading.finam.ru?configUrl=https://cloud-cdn.finam.ru/config/uat/ft_lite-html5",
     "ftDynamicLink": "https://finamtrade.page.link",
-    "edox": "https://edox-test.finam.ru",
-    "ibank": "https://ibank-dit.finambank.ru",
-    "open": "https://test-open.finam.ru",
-    "comon": "https://www.dev-comon.ru",
-    "registration": "https://account-test.finam.ru",
+    "edox": "https://uat-edox.finam.ru",
+    "ibank": "https://ibank-staging.finambank.ru",
+    "open": "https://uat-open.finam.ru",
+    "comon": "https://www.uat-comon.ru",
+    "registration": "https://uat-account.finam.ru",
     "brokerRegulations": "http://zaoik.finam.ru/broker/regulations",
     "reducedWarrantyCoverage": "https://www.finam.ru/services/promo00013",
     "depoTariffs": "https://zaoik.finam.ru/depo/tariffs",
@@ -41,12 +41,26 @@
     "ndflRecalculationTariffs": "http://zaoik.finam.ru/broker/regulations"
   },
   "auth": {
-    "env": "dev",
+    "env": "preprod",
     "variant": "finam"
   },
   "providers": [
     {
-      "id": "NLK_DEV_KRATOS_TOKEN",
+      "id": "NLK_KRATOS_TOKEN",
+      "title": {
+        "ru": "Войти",
+        "en": "Sign In"
+      },
+      "description": {
+        "ru": "Введите логин и пароль Личного кабинета клиента",
+        "en": "Enter the login and password of the client's Private office"
+      },
+      "default": false,
+      "registration": true,
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
+    },
+    {
+      "id": "NLK_KRATOS_CREDS",
       "title": {
         "ru": "Войти",
         "en": "Sign In"
@@ -57,28 +71,14 @@
       },
       "default": true,
       "registration": true,
-      "recoveryLink": "https://account.finam.ru/RestoreAccess"
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
     },
     {
-      "id": "NLK_DEV_KRATOS_CREDS",
-      "title": {
-        "ru": "Войти",
-        "en": "Sign In"
-      },
-      "description": {
-        "ru": "Введите логин и пароль Личного кабинета клиента",
-        "en": "Enter the login and password of the client's Private office"
-      },
-      "default": false,
-      "registration": true,
-      "recoveryLink": "https://account.finam.ru/RestoreAccess"
-    },
-    {
-      "id": "EDO_DEV",
+      "id": "NLK",
       "capitalized_login": false,
       "title": {
-        "ru": "Личный кабинет EDO_DEV",
-        "en": "Private office EDO_DEV"
+        "ru": "Личный кабинет NLK",
+        "en": "Private office NLK"
       },
       "description": {
         "ru": "Для входа в систему используйте логин и пароль Личного кабинета клиента",
@@ -87,10 +87,10 @@
       "use_last_login": false,
       "default": false,
       "registration": true,
-      "recoveryLink": "https://account.finam.ru/RestoreAccess"
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
     },
     {
-      "id": "EDOX_ACCOUNTS",
+      "id": "EDOX_ACCOUNTS_PP",
       "capitalized_login": false,
       "title": {
         "ru": "Личный кабинет EDOX_ACCOUNTS",
@@ -103,14 +103,14 @@
       "use_last_login": false,
       "default": false,
       "registration": true,
-      "recoveryLink": "https://account.finam.ru/RestoreAccess"
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
     },
     {
-      "id": "EDOX_ACCOUNTS_DEV",
+      "id": "EDOX",
       "capitalized_login": false,
       "title": {
-        "ru": "Личный кабинет EDOX_ACCOUNTS_DEV",
-        "en": "Private office EDOX_ACCOUNTS_DEV"
+        "ru": "Личный кабинет EDOX",
+        "en": "Private office EDOX"
       },
       "description": {
         "ru": "Для входа в систему используйте логин и пароль Личного кабинета клиента",
@@ -119,7 +119,23 @@
       "use_last_login": false,
       "default": false,
       "registration": true,
-      "recoveryLink": "https://account.finam.ru/RestoreAccess"
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
+    },
+    {
+      "id": "EDO_DEV_KRATOS_CREDS",
+      "capitalized_login": false,
+      "title": {
+        "ru": "Личный кабинет EDO_DEV_KRATOS_CREDS",
+        "en": "Private office EDO_DEV_KRATOS_CREDS"
+      },
+      "description": {
+        "ru": "Для входа в систему используйте логин и пароль Личного кабинета клиента",
+        "en": "Enter login and password for EDOX account."
+      },
+      "use_last_login": false,
+      "default": false,
+      "registration": true,
+      "recoveryLink": "https://uat-account.finam.ru/RestoreAccess"
     }
   ],
   "features": {
@@ -132,7 +148,7 @@
   },
   "landings": {
     "finambank_cards": "https://www.finambank.ru/person/cards",
-    "finam_support": "https://www.finam.ru/landings/faq"
+    "finam_support": "https://test.finam.ru/landings/faq"
   },
   "currency": {
     "list": [
@@ -159,13 +175,13 @@
     "default": "ru"
   },
   "ottProviders": {
-    "edox": "EDO_DEV_KRATOS_TOKEN",
-    "comon": "COMON_DEV_KRATOS_TOKEN"
+    "edox": "EDOX_PP_KRATOS_CREDS",
+    "comon": "COMON_KRATOS_TOKEN"
   },
   "chat": {
     "widgetUrl": "https://txchat-widget-staging.finam.dev",
     "product": "ft_lite",
-    "env": "dev-dev"
+    "env": "stable"
   },
   "events": {
     "env": "dev"
@@ -175,14 +191,14 @@
     "tracesSampleRate": 1.0
   },
   "matomo": {
-    "urlBase": "https://txcabinet-dev.finam.dev",
+    "urlBase": "https://uat-lk.finam.ru",
     "trackerUrl": "https://matomo.finam.ru/matomo.php",
     "srcUrl": "https://matomo.finam.ru/matomo.js",
-    "siteId": 15,
+    "siteId": 16,
     "disabled": false,
     "configurations": {
-      "setCookieDomain": "*.txcabinet-dev.finam.dev",
-      "setDomains": ["*.txcabinet-dev.finam.dev"]
+      "setCookieDomain": "*.uat-lk.finam.ru",
+      "setDomains": ["*.uat-lk.finam.ru"]
     }
   },
   "yaMetrika": {
@@ -205,11 +221,11 @@
   },
   "taxCalculationByIssuersFormHide": {
     "dateBegin": 1672121781,
-    "dateEnd": 1672132800
+    "dateEnd": 1672153200
   },
   "massiveFailures": {
     "url": [
-      "https://ft-alarm-cdn.finam.ru/nlk-test-message.json"
+      "https://ft-alarm-cdn.finam.ru/nlk-message.json"
     ],
     "requestInterval": 60000
   },
@@ -225,7 +241,7 @@
     "premium": "https://www.finambank.ru/person/cards/premium/",
     "corporate": "https://www.finambank.ru/person/cards/corporate/"
   },
-  "bankCardActivateLink": "https://redirect.appmetrica.yandex.com/serve/460531488786564436",
+  "bankCardActivateLink": "https://redirect.appmetrica.yandex.com/serve/100243506802523191",
   "incomePaymentFromSecurities": {
     "coupons": {
       "currencies": [643]
@@ -251,5 +267,9 @@
   "bestPrivateInvestor": {
     "dateBegin": 1693993182,
     "dateEnd": 1701957000
+  },
+  "paybackBanner": {
+    "dateBegin": 1711398355,
+    "dateEnd": 1715115540
   }
 }
