@@ -154,7 +154,7 @@
     "default": "ru"
   },
   "ottProviders": {
-    "edox": "EDO_DEV_KRATOS_CREDS"
+    "edox": "NLK_DEV_KRATOS_TOKEN"
   },
   "chat": {
     "widgetUrl": "https://txchat-widget-staging.finam.dev",
